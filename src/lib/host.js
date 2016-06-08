@@ -129,7 +129,7 @@ function Host(config, globalConfig) {
   if (this.path === '/') {
     this.path = '';
   } else if (this.path && this.path.charAt(0) !== '/') {
-    this.path = '/' + (this.path || '');
+    this.path =  (this.path || '');
   }
 
   // strip trailing ':' on the protocol (when config comes from url.parse)
